@@ -11,10 +11,10 @@ test:
     - exit 3
     - echo $foo
     - echo "export bar=foo" > myscript.sh
-    - sudo ./myscript.sh
-    - echo "bar: $bar"
+    - "sudo ./myscript.sh"
+    - 'echo "bar: $bar"'
     - source myscript.sh
-    - echo "bar after source: $bar"
+    - 'echo "bar after source: $bar"'
   post:
     - export
     - echo $foo
