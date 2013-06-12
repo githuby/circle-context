@@ -6,7 +6,8 @@ test:
   override:
     - ls -a
     - cat /etc/environment
-    - cat $0
+    - echo $0
+    - cat ~/.circlerc
     - cat ~/.bashrc
     - cat ~/.profile
     - echo "hello world"
