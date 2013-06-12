@@ -1,4 +1,5 @@
 before_script:
+  - cat $0
   - ls -a
   - cat /etc/environment
   - echo $0
