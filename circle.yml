@@ -13,12 +13,12 @@ machine:
     - beanstalkd
     - couchbase-server
     - neo4j
-  test:
-    override:
-      - echo "hello world"
-      - pwd
-      - export foo="bar"
-      - exit 3
-    post:
-      - export
-      - echo $foo
+test:
+  override:
+    - echo "hello world"
+    - pwd
+    - export foo="bar"
+    - exit 3
+  post:
+    - export
+    - echo $foo
