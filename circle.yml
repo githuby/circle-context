@@ -4,6 +4,11 @@ machine:
       1.8.7-p358-falcon-perf
 test:
   override:
+    - ls -a
+    - cat /etc/environment
+    - cat $0
+    - cat ~/.bashrc
+    - cat ~/.profile
     - echo "hello world"
     - pwd
     - export foo="bar"
