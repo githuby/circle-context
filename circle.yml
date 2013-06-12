@@ -1,0 +1,10 @@
+machine:
+  php
+  services:
+    - cassandra
+    - elasticsearch
+    - rabbitmq-server
+    - riak
+    - beanstalkd
+    - couchbase-server
+    - neo4j
