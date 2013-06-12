@@ -1,0 +1,19 @@
+before_script:
+  - ls -a
+  - cat /etc/environment
+  - echo $0
+  - cat ~/.bashrc
+  - cat ~/.profile
+  - echo "hello world"
+  - pwd
+  - export foo="bar"
+  - echo $foo
+  - exit 3
+  - echo $foo
+  - echo "export bar=foo" > myscript.sh
+  - "./myscript.sh"
+  - 'echo "bar: $bar"'
+  - source myscript.sh
+  - 'echo "bar after source: $bar"'
+  - export
+  - echo $foo
